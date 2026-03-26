@@ -11,6 +11,7 @@
       background: #050509;
       color: #f5f5f5;
     }
+
     .page {
       min-height: 100vh;
       display: flex;
@@ -18,91 +19,44 @@
       align-items: center;
       justify-content: center;
       padding: 3rem 1.5rem;
+      opacity: 0;
+      animation: fadeIn 1.2s ease forwards;
     }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
     .logo {
-      letter-spacing: 0.35em;
+      letter-spacing: 0.28em;
       text-transform: uppercase;
-      font-size: 0.8rem;
-      margin-bottom: 1.5rem;
-      color: #b3b3b3;
+      font-size: 0.78rem;
+      margin-bottom: 1.2rem;
+      color: #b8b8c2;
     }
+
     h1 {
       font-weight: 500;
-      font-size: clamp(2.4rem, 4vw, 3.4rem);
-      letter-spacing: 0.08em;
+      font-size: clamp(2.6rem, 4vw, 3.4rem);
+      letter-spacing: 0.04em;
       text-transform: uppercase;
       text-align: center;
     }
+
     h1 span {
       display: block;
       font-weight: 300;
-      font-size: 0.9rem;
-      letter-spacing: 0.35em;
-      margin-top: 0.9rem;
-      color: #b3b3b3;
+      font-size: 0.92rem;
+      letter-spacing: 0.22em;
+      margin-top: 1rem;
+      color: #9c9ca6;
     }
+
     p {
-      max-width: 540px;
+      max-width: 520px;
       text-align: center;
       margin: 1.8rem auto 2.4rem;
-      line-height: 1.6;
-      color: #d0d0d0;
-      font-size: 0.95rem;
-    }
-    .cta-row {
-      display: flex;
-      gap: 0.75rem;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .btn {
-      border-radius: 999px;
-      padding: 0.8rem 1.8rem;
-      border: 1px solid #2b2b33;
-      background: transparent;
-      color: #f5f5f5;
-      font-size: 0.85rem;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      cursor: pointer;
-      transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
-    }
-    .btn-primary {
-      background: #f5f5f5;
-      color: #050509;
-      border-color: #f5f5f5;
-    }
-    .btn:hover {
-      border-color: #ffffff;
-    }
-    .btn-primary:hover {
-      background: #ffffff;
-    }
-    .tagline {
-      margin-top: 2.4rem;
-      font-size: 0.75rem;
-      letter-spacing: 0.28em;
-      text-transform: uppercase;
-      color: #7a7a85;
-    }
-  </style>
-</head>
-<body>
-  <main class="page">
-    <div class="logo">Solvane</div>
-    <h1>
-      Affordable Luxury
-      <span>Everyday pieces. Elevated details.</span>
-    </h1>
-    <p>
-      Solvane is a modern clothing label built on clean lines, quiet confidence, and accessible luxury.
-      This is the first draft of the official site—collections, lookbooks, and product drops are coming soon.
-    </p>
-    <div class="cta-row">
-      <button class="btn btn-primary">View Collections</button>
-      <button class="btn">Brand Story</button>
-    </div>
-    <div class="tagline">Solvane Studios · Toronto</div>
-  </main>
-</body>
-</html>
+      line-height: 1.65;
+      color: #d2d2d7;
+      font-size: 0.96
